@@ -66,7 +66,9 @@ body * {
 /*switch*/
 #switch {
   position: relative;
-   width: 64px;
+  width: 64px;
+
+  margin: 4px auto;
 }
 
 #switch button {
@@ -77,10 +79,15 @@ body * {
   border-radius: 50%;
 
   position: absolute;
-  top: 50%
-  right: 0;
+  top: 50%;
+  left: 0;
   z-index: 1;
-  transform: translateY(-50%)
+  transform: translateY(-50%);
+}
+
+.light #switch button {
+  right: 0;
+  left: initial;
 }
 
 #switch span {
@@ -102,6 +109,8 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 16px;
+
+  padding-top: 20px;
 }
 
 ul li a {
